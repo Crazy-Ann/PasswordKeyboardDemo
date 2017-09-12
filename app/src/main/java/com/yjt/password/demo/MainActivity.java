@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements OnPasswordChanged
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        dkbvPassword.shuffleKeyboard();
+    }
+
+    @Override
     public void onPasswordChange(String password) {
         Log.i("onPasswordChange", password);
     }
