@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DynamicKeyBoardView">
+        <attr name="delete_drawable" format="reference"/>
+        <attr name="delete_width" format="dimension|reference"/>
+        <attr name="delete_height" format="dimension|reference"/>
+        <attr name="delete_background" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

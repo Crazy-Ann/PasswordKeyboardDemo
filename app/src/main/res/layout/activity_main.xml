@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:keyboard="http://schemas.android.com/apk/res-auto"
+    xmlns:password="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yjt.password.demo.MainActivity">
+
+    <com.yjt.password.PasswordView
+        android:id="@+id/pvPassowrd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        password:password_gridColor="@android:color/white"
+        password:password_length="6"
+        password:password_lineColor="#8F8F8F"
+        password:password_lineWidth="@dimen/dp_1"
+        password:password_textColor="@android:color/black"
+        password:password_textSize="14sp"/>
+
+    <com.yjt.keyboard.DynamicKeyBoardView
+        android:id="@+id/dkbvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#8F8F8F"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/selector_key_board"
+        android:keyTextColor="@android:color/black"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        keyboard:delete_background="@android:color/white"
+        keyboard:delete_drawable="@mipmap/icon_password_delete"
+        keyboard:delete_width="20dp"/>
+
+</RelativeLayout>

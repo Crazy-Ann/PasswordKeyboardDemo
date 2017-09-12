@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordView">
+        <attr name="password_textColor" format="color|reference"/>
+        <attr name="password_textSize" format="dimension"/>
+        <attr name="password_lineColor" format="color"/>
+        <attr name="password_lineWidth" format="dimension"/>
+        <attr name="password_gridColor" format="color"/>
+        <attr name="password_length" format="integer"/>
+        <attr name="password_transformation" format="string"/>
+        <attr name="password_type" format="enum">
+            <enum name="numberPassword" value="0"/>
+            <enum name="textPassword" value="1"/>
+            <enum name="textVisiblePassword" value="2"/>
+            <enum name="textWebPassword" value="3"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
